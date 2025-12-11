@@ -1,24 +1,36 @@
-import { DarkTheme, DefaultTheme, ThemeProvider } from '@react-navigation/native';
-import { Stack } from 'expo-router';
-import { StatusBar } from 'expo-status-bar';
-import 'react-native-reanimated';
-
-import { useColorScheme } from '@/hooks/use-color-scheme';
-
-export const unstable_settings = {
-  anchor: '(tabs)',
-};
+import { Stack } from "expo-router";
+import { SafeAreaProvider } from "react-native-safe-area-context";
 
 export default function RootLayout() {
-  const colorScheme = useColorScheme();
-
-  return (
-    <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
-      <Stack>
-        <Stack.Screen name="(tabs)" options={{ headerShown: false }} />
-        <Stack.Screen name="modal" options={{ presentation: 'modal', title: 'Modal' }} />
-      </Stack>
-      <StatusBar style="auto" />
-    </ThemeProvider>
-  );
+    return (
+        <SafeAreaProvider>
+            <Stack
+                screenOptions={{
+                    headerStyle: {
+                        backgroundColor: "#0B1120",
+                    },
+                    headerTintColor: "#fff",
+                    headerTitleStyle: {
+                        fontWeight: "bold",
+                    },
+                    contentStyle: { backgroundColor: "#0B1120" },
+                }}
+            >
+                <Stack.Screen
+                    name="index"
+                    options={{
+                        title: "Mobile Device Programming",
+                        headerShown: false,
+                    }}
+                />
+                <Stack.Screen
+                    name="task10"
+                    options={{
+                        title: "Tugas Sesi 10",
+                        headerShown: false,
+                    }}
+                />
+            </Stack>
+        </SafeAreaProvider>
+    );
 }
