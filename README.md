@@ -23,3 +23,11 @@ Screenshots:
 </div>
 
 ---
+
+### Session 11 Assignment
+
+**Location**: [`app/task11/`](app/task11/)
+
+Adding new column (finished at) and filter by status (Done, Undone)
+
+---
