@@ -26,6 +26,11 @@ const tasks: TaskItem[] = [
         title: "Tugas Sesi 11",
         route: "/task11",
     },
+    {
+        id: 12,
+        title: "Tugas Sesi 12",
+        route: "/task12",
+    },
 
     // Tambahkan tugas sesi lainnya di sini
 ];

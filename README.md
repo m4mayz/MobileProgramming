@@ -31,3 +31,9 @@ Screenshots:
 Adding new column (finished at) and filter by status (Done, Undone)
 
 ---
+
+### Session 12 Assignment
+
+**Location**: [`app/task12/`](app/task12/)
+
+---

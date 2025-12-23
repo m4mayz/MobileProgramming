@@ -37,6 +37,13 @@ export default function RootLayout() {
                         headerShown: false,
                     }}
                 />
+                <Stack.Screen
+                    name="task12"
+                    options={{
+                        title: "Tugas Sesi 12",
+                        headerShown: false,
+                    }}
+                />
             </Stack>
         </SafeAreaProvider>
     );
