@@ -36,4 +36,12 @@ Adding new column (finished at) and filter by status (Done, Undone)
 
 **Location**: [`app/task12/`](app/task12/)
 
+-   Display at least three cards in a stack layout.
+-   The top card can be swiped left and right.
+-   Left and right swipes must have different behaviors.
+-   Use react-native-reanimated and react-native-gesture-handler.
+-   The animations must run smoothly and responsively.
+
+Application demo (video recording): [See the video here.](https://drive.google.com/file/d/1qIRbG1witojjKH97RN_jDQotyNCGvI2M/view?usp=drive_link)
+
 ---
